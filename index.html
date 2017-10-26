@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Espace CEN - 2013/2015</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf8">
+</head>
+<body>
+	<div id="globale">
+		<!-- LA POPUP -->
+		<div id="fond_popup">
+		</div>
+		<div id="popup">
+			<div id="close_popup"></div>
+			<div class="contenu_popup" id="a_propos">
+				<h2 class="fst">À propos</h2>
+				<p class="parag">Espace CEN est une plateforme web interactive destinée aux étudiants de la promotion 2013/2015 du Master CEN, ouverte aux professionnels et curieux du monde du numérique et du multimédia.</p>
+
+				<h2>FAQ</h2>
+				<p class="rub">Comment utiliser la plateforme ?</p>
+				<p class="parag">Chaque élève du Master CEN peut créer sa propre fiche personnelle contenant son nom, son prénom, sa spécialité, sa photo et un lien vers son portfolio. Il vous suffit donc de remplir le formulaire d’inscription et votre profil sera créé. Après une validation effectuée par les soins de l’équipe,  votre  profil sera ensuite visible sur le site.</p>
+				<p class="parag">Ne lésinez pas sur les mots-clés que vous consignez lors de votre inscription. Ils ne sont peut-être pas visibles sur votre fiche mais ils servent à vous retrouvez lors des recherches spécifiques. Soyez imaginatifs !</p>
+
+				<p class="rub">Comment modifier ses informations ?</p>
+				<p class="parag">Lors de votre inscription, vous devez choisir un mot de passe. Ne le perdez pas ! Celui-ci vous sera nécessaire ultérieurement. En effet, il vous permettra de modifier votre photo, le lien de votre portfolio, ou même les autres informations vous concernant.</p>
+
+				<p class="rub">Quelle est cette chose qui apparaît sur mon écran toutes les 42 secondes ?</p>
+				<p class="parag">Cette chose ? Vous allez le vexer. Il s’agit de <strong>Patoche</strong>, deuxième du nom. Il était perdu, mais puisqu’il était tout autant sympathique, notre équipe a décidé de l’héberger sur la plateforme.</p>
+			</div>
+			<div class="contenu_popup" id="credits">
+				<h2 class="fst credit_titre">Crédits</h2>
+				<p class="parag abs">2014 - Espace CEN - Paris 8</p>
+				<div class="equipe"></div>
+				<div class="noms">
+					<a target="_blank" href="http://www.olivierleveque.fr/" class="de">Olivier<br />LÉVÊQUE</a><!--
+					--><a target="_blank" href="http://fr.linkedin.com/pub/l%C3%A9na%C3%AFg-berthou/90/319/812" class="ed">Lénaïg<br />BERTHOU</a><!--
+					--><a target="_blank" href="http://fr.linkedin.com/in/adelegirard" class="gr">Adèle<br />GIRARD</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- LE LOGO -->
+		<div id="logo"></div>
+
+		<!-- LE MENU -->
+		<div id="bloc_menu">
+			<div id="actualisation">
+				<img src="img/icon_actualiser.png" id="picto_actualisation" class="remplissage">
+			</div>
+			<div id="creer_compte">
+				<img src="img/icon_creer-compte.png" id="picto_compte" class="remplissage">
+				<div id="bloc_compte">
+					<div id="content_bloc_compte">
+						<form id="ajouter" method="post" action="#">
+							<input type="hidden" name="id" id="id" value=""><!--
+							--><input type="text" name="nom" id="nom" placeholder="Nom"><!--
+							--><input type="text" name="prenom" id="prenom" placeholder="Prénom"><!--
+							--><select id="groupe" name="groupe"><!--
+								--><option value="" disabled selected>Profil</option><!--
+								--><option value="dev">Développeur</option><!--
+								--><option value="edito">Edito</option><!--
+								--><option value="graphiste">Graphiste</option><!--
+							--></select><!--
+							--><input type="text" name="url_photo" id="url_photo" placeholder="Lien photo profil"><!--
+							--><input type="text" name="url_portfolio" id="url_portfolio" placeholder="Lien portfolio / CV"><!--
+							--><input type="password" name="mdp" id="mdp" placeholder="Mot de passe"><!--
+							--><input type="password" name="mdpc" id="mdpc" placeholder="Confirmation mot de passe"><!--
+							--><textarea name="keyword" id="keyword" placeholder="Mots-clés, séparés par des virgules"></textarea><!--
+							--><div class="erreur"></div><!--
+							--><input type="submit" id="btn_envoi" name="send" value="Décoller !">
+						</form>
+						<div id="confirmation_ajout"></div>
+					</div>
+				</div>
+			</div>
+			<div id="recherche">
+				<form id="form_search">
+					<input type="text" placeholder="Ex: edito, graphiste, dev" value="" id="champ_recherche">
+					<input type="submit" id="envoi_recherche" value="">
+				</form><!--
+				--><img src="img/icon_recherche.png" id="picto_recherche" class="remplissage">
+			</div>
+		</div>
+
+		<!-- Satellite -->
+		<div id="satellite" target="info_sat"></div>
+		<div id="info_sat">
+			<div class="close"></div>
+			<a target="_blank" href="http://www.univ-paris8.fr/Master-creation-et-edition" id="paris8"></a>
+			<a target="_blank" href="http://hypermedia.univ-paris8.fr/formations/mastercenietii/presentation/" id="mastercen"></a>
+			<a target="_blank" href="http://www.crossmedias.fr/" id="crossmedia"></a>
+		</div>
+
+		<!-- Patoche -->
+		<div id="patoche"></div>
+
+		<!-- ZONE D'ANIMATION -->
+		<div id="zone_principale">
+
+			<!--
+			************ ELEMENTS PAR DEFAUT ************
+			<div class="cosmo graphiste">
+				<div class="reflet"></div>
+				<div class="photo">
+					<img src="img/adoule.png">
+				</div>
+			</div>
+			<div class="cosmo dev">
+				<div class="reflet"></div>
+				<div class="photo">
+					<img src="img/ol.png">
+				</div>
+			</div>
+			<div class="cosmo edito">
+				<div class="reflet"></div>
+				<div class="photo">
+					<img src="img/lenaigou.png">
+				</div>
+			</div>
+			-->
+		</div>
+
+		<!-- PIED DE PAGE / INFOS COMPLEMENTAIRES -->
+		<div id="piedpage"><a class="popup" href="#a_propos">À propos</a> | <a class="popup" href="#credits">Crédits</a> | <a href="mailto:contact@olivierleveque.fr">Contacts</a></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+</body>
+</html>
